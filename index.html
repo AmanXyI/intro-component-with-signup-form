@@ -43,14 +43,17 @@
       <div class="form-main">
         <form action="submit">
 
-          <input type="text" class="input-area active" name="first-name" id="firstName" placeholder="first name"  >
+          <input type="text" class="input-area" name="first-name" id="firstName" placeholder="first name" data-id="firstName" >
+          <div class="error" id="firstNameError">First Name connot be empty</div>
 
-          <input type="text" class="input-area" name="last-name" id="lastName" placeholder="last name" >
+          <input type="text" class="input-area " name="last-name" id="lastName" placeholder="last name" data-id="lastName">
+          <div class="error active" id="lastNameError"> Last Name connot be empty</div>
 
-          <input type="email" class="input-area" name="email" id="emailAddress" placeholder="email address" >
+          <input type="email" class="input-area" name="email" id="emailAddress" placeholder="email address" data-id="email">
+          <div class="error" id="emailError">Looks like this is not an Email</div>
 
-          <input type="password" class="input-area" name="password" id="password" placeholder="password" >
-
+          <input type="password" class="input-area" name="password" id="password" placeholder="password" data-id="password">
+          <div class="error" id="passwordError">Password connot be empty</div>
 
           <button type="submit" class="submit-btn">
             claim your free trial
