@@ -223,6 +223,7 @@ body{
 }
 
 .form-main input{
+    position: relative;
     width: 100%;
     height: 3.2rem;
     border-radius: .3rem;
@@ -239,6 +240,7 @@ body{
     text-transform: capitalize;
     color: var(--clr-blue);
 }
+
 .submit-btn{
     width: 100%;
     height:3.5rem;
@@ -267,4 +269,33 @@ body{
 .terms-link{
     color: var(--clr-red);
     font-weight: 600;
+}
+
+@media screen and (min-width:900px){
+    body{
+        background:var(--clr-red) url('./images/bg-intro-desktop.png');
+    }
+    .section-center{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .section-main{
+        width: 35rem;
+    }
+    .section-text h2{
+        width: 33rem;
+        line-height: 2.5rem;
+        text-align: left;
+    }
+    .section-text p{
+        width: 33rem;
+        text-align: left;
+    }
+    .remainder p{
+        width: 100%;
+    }
+    .terms{
+        width: 100%;
+    }
 }
